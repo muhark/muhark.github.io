@@ -4248,7 +4248,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .pagination > li > span:hover,
 .pagination > li > a:focus,
 .pagination > li > span:focus {
-    color: #2a6496;
+    color: #cc99cc;
 }
 .pagination > .active > a,
 .pagination > .active > span,
