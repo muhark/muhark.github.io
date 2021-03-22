@@ -41,7 +41,7 @@ a:hover {
 
 /* Layout */
 .main-layout {
-  background: #999999;
+  background: #393939;
 }
 .sidebar-nav {
   margin: 0;
@@ -155,7 +155,7 @@ div.col-sm-3 div.profile-about {
 @media (min-width: 1024px) {
   .fixed-condition {
     position: fixed;
-    max-width: 255px;
+    max-width: 200px;
   }
 }
 @media (max-width: 768px) {
