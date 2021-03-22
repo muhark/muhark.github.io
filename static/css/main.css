@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-family: "DM Mono", Arial, sans-serif;
   background: #2d2d2d;
   line-height: 1.5em;
   font-weight: 300;
@@ -20,7 +20,7 @@ span.time, span.categories {
   text-transform: uppercase;
 }
 h1, h2, h3 {
-  color: #f2777a;
+  color: #66cccc;
   font-weight: normal;
 }
 h1 {
@@ -32,10 +32,10 @@ h2, h3 {
 }
 a, a:link, a:active {
   text-decoration: none;
-  color: #6699cc;
+  color: #f99157;
 }
 a:hover {
-  color: #66cccc;
+  color: #f2777a;
   text-decoration: underline;
 }
 
@@ -87,11 +87,11 @@ div.post-content .btn-tags {
 div.col-sm-3 {
   margin-top: 100px;
   font-size: 11px;
-  color: #6699cc;
+  color: #ffcc66;
 }
 div.col-sm-3 strong {
   font-size: 16px;
-  color: #66cccc;
+  color: #ffcc66;
   font-weight: normal;
 }
 div.col-sm-3 div.profile-about {
