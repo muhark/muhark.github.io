@@ -1,39 +1,26 @@
-$color-background: #2d2d2d
-$color-currentLine: #393939
-$color-selection: #515151
-$color-foreground: #cccccc
-$color-comment: #999999
-$color-red: #f2777a
-$color-orange: #f99157
-$color-yellow: #ffcc66
-$color-green: #99cc99
-$color-aqua: #66cccc
-$color-blue: #6699cc
-$color-purple: #cc99cc
-
 body {
   font-family: "Roboto Condensed", Arial, sans-serif;
-  background: $color-background;
+  background: #2d2d2d;
   line-height: 1.5em;
   font-weight: 300;
   font-size: 16px;
-  color: $color-foreground;
+  color: #cccccc;
 }
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid $color-green;
-  border-bottom: 1px solid $color-green;
+  border-top: 1px solid #99cc99;
+  border-bottom: 1px solid #99cc99;
 }
 span.time, span.categories {
-  color: $color-comment;
+  color: #999999;
   margin-bottom: 5px;
   font-size: 11px;
   text-transform: uppercase;
 }
 h1, h2, h3 {
-  color: $color-red;
+  color: #f2777a;
   font-weight: normal;
 }
 h1 {
@@ -45,16 +32,16 @@ h2, h3 {
 }
 a, a:link, a:active {
   text-decoration: none;
-  color: $color-blue;
+  color: #6699cc;
 }
 a:hover {
-  color: $color-aqua;
+  color: #66cccc;
   text-decoration: underline;
 }
 
 /* Layout */
 .main-layout {
-  background: $color-comment;
+  background: #999999;
 }
 .sidebar-nav {
   margin: 0;
@@ -71,9 +58,9 @@ a:hover {
 
 /* Content */
 div.content pre {
-  background: $color-currentLine;
+  background: #393939;
   padding: 10px;
-  color: $color-foreground;
+  color: #cccccc;
   overflow-x: auto;
   font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
   font-size: 12px;
@@ -81,13 +68,13 @@ div.content pre {
 }
 
 footer {
-  border-top: 1px solid $color-red;
+  border-top: 1px solid #f2777a;
   width: 100%;
   height: 10px;
   margin-top: 10px;
   margin-bottom: 3em;
   padding-top: 10px;
-  color: $color-orange;
+  color: #f99157;
   font-size: 11px;
   bottom: 0;
   padding-bottom: 10px;
@@ -100,16 +87,16 @@ div.post-content .btn-tags {
 div.col-sm-3 {
   margin-top: 100px;
   font-size: 11px;
-  color: $color-blue;
+  color: #6699cc;
 }
 div.col-sm-3 strong {
   font-size: 16px;
-  color: $color-aqua;
+  color: #66cccc;
   font-weight: normal;
 }
 div.col-sm-3 div.profile-about {
   margin-top: 10px;
-  color: $color-green;
+  color: #99cc99;
 }
 
 /* Pagination */
@@ -156,8 +143,8 @@ div.col-sm-3 div.profile-about {
 
 .share-page {
   padding: 10px 10px 5px;
-  border-top: 1px solid $color-yellow;
-  border-bottom: 1px solid $color-orange;
+  border-top: 1px solid #ffcc66;
+  border-bottom: 1px solid #f99157;
 }
 .post-content img,
 .content img {
