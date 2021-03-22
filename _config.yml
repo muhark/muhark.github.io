@@ -1,6 +1,6 @@
 title: Full Stack Political Science
 description: A blog about becoming your own IT division as a social science researcher
-author: Musashi Jacobs-Harukawa
+author: Musashi (Jacobs-)Harukawa
 github: https://github.com/muhark
 about: Coding, Development, Optimization and Frustration
 
@@ -21,8 +21,7 @@ social:
       link: "https://github.com/muhark"
 
 share:
-  twitter_username: github.io
-  fb_appid: 1749788565247320
+  twitter_username: @MJacobsHarukawa
 
 urls:
     - text: About Me
