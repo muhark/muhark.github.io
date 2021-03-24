@@ -3,6 +3,7 @@
 		"slug": "does-microtargeting-work",
 		"name": "Estimating the Effect of Micro-Targeting",
 		"image": "effect_of_targeting_final.png",
+		"url": "#",
 		"date": "Oct 2020",
 		"tags": ["Survey Experiments", "Research", "Machine Learning", "Causal Inference"]
 	}
