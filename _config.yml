@@ -9,7 +9,7 @@ tagarray: []
 
 collections:
   project:
-    output: true
+    output: false
     permalink: /project/:path/
 
 social:
@@ -24,7 +24,7 @@ share:
   twitter_username: MJacobsHarukawa
 
 urls:
-    - text: About Me
+    - text: About
       url: /about/
     - text: My Projects
       url: /projects/

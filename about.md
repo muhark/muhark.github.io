@@ -16,14 +16,10 @@ Lockdown hobbies include baking and tinkering with Linux.
 
 ## About this Blog
 
-As a political science researcher at a department with few to no computational resources and a individual-focused style of research, I am usually my own IT division. Some things I have done for my research:
+While computational tools have become an essential tool for political (and other social) science research, our research environment and support infrastructure have not caught up. Tasks that are usually handled by different teams in an IT company are all down to the researcher; you have to become your own sys admin, front end developer, back end developer, database administrator, and data analyst.
 
-- Manage, package and deploy development environments.
-- Build MariaDB and PostgreSQL databases for remote access.
-- Create bots and web scrapers for collecting trace data.
-- Train, test and deploy ML algorithms.
-- Write and host a suite of tools for teaching Python remotely.
-- Deploy a survey website with a custom Jupyter kernel hosting a predictive algorithm.
+The infeasibility of this task leads to lax practices, from poor data storage/management techniques (Dropbox full of zipped CSVs anyone?) to idiosyncratic development environments. All of this hampers reproducibility and wastes time.
 
+This blog is my notes and tutorials on the tools available to computational social science researchers, _at all stages of development_. I aim to write on topics from web development to causal inference to machine learning to academic writing, all using only free/open-source software to will save you time and hopefully help standardize reproducible research.
 
-email: musashi.harukawa[at]politics.ox.ac.uk
+email: musashi[period]harukawa[at]politics[dot]ox[fullstop]ac[.]uk
