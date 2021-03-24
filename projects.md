@@ -1,7 +1,8 @@
 ---
 layout: project
-title: Projects
-permalink: /projects/
+title: Projects and Papers
+permalink: /project/
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+This is a page where I want will showcase various projects I am working on.
+
