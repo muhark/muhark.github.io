@@ -9,7 +9,7 @@ tagarray: []
 
 collections:
   project:
-    output: false
+    output: true
     permalink: /project/:path/
 
 social:
@@ -26,7 +26,7 @@ share:
 urls:
     - text: About
       url: /about/
-    - text: My Projects
+    - text: Projects and Papers
       url: /projects/
     - text: XML Feed
       url: /feed.xml
