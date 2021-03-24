@@ -1,7 +1,7 @@
 ---
 layout: project_single
-title: "Micro-targeting Effect"
-slug: "microtargeting-effect"
+title: "_Does Micro-Targeting Work?_ Evidence from an Experiment during the 2020 United States Presidential Election"
+slug: "does-microtargeting-work"
 ---
 
 This is a test.
