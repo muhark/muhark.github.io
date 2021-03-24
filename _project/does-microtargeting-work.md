@@ -1,6 +1,6 @@
 ---
 layout: project_single
-title: "_Does Micro-Targeting Work?_ Evidence from an Experiment during the 2020 United States Presidential Election"
+title: "Estimating the Effect of Micro-Targeting"
 slug: "does-microtargeting-work"
 ---
 
