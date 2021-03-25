@@ -24,6 +24,6 @@ While computational tools have become an essential tool for political (and other
 
 The infeasibility of this task leads to lax practices, from poor data storage/management techniques (Dropbox full of zipped CSVs anyone?) to idiosyncratic development environments. All of this hampers reproducibility and wastes time.
 
-This blog is my notes and tutorials on the tools available to computational social science researchers, _at all stages of development_. I aim to write on topics from web development to causal inference to machine learning to academic writing, all using only free/open-source software to will save you time and hopefully help standardize reproducible research.
+This blog is my notes and tutorials on the tools available to computational social science researchers, _at all stages of development_. I aim to write on topics from web development to causal inference to machine learning to academic writing, using only free/open-source software. The end goal: to save you time and help standardize reproducible research.
 
 
