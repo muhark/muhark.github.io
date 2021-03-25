@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto Mono", "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Roboto", "Source Sans Pro", Helvetica, sans-serif;
   background: #2d2d2d;
   line-height: 1.5em;
   font-weight: 300;
@@ -150,6 +150,10 @@ div.col-sm-3 div.profile-about {
 .post-content img,
 .content img {
   max-width: 100%
+}
+
+.author-name h1 {
+	color: #f2777a
 }
 
 /* Responsive Conditional */

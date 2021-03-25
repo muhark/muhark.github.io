@@ -1,8 +1,7 @@
 ---
 layout: project
-title: Projects and Papers
+title: Research and Projects
 permalink: /projects/
 ---
 
-This is a page where I want will showcase various projects I am working on.
-
+Below are some of the projects and papers that I am working on (or have recently completed). Follow each link for more info (paper, website, github, etc.)

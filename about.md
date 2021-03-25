@@ -14,6 +14,10 @@ Prior to graduate studies, I worked as a "Data Scientist" at a finance/IT conglo
 
 Lockdown hobbies include baking and tinkering with Linux.
 
+email: musashi[period]harukawa[at]politics[dot]ox[fullstop]ac[.]uk
+
+[CV](/static/data/docs/mharukawa-cv-2021-03-22.pdf)
+
 ## About this Blog
 
 While computational tools have become an essential tool for political (and other social) science research, our research environment and support infrastructure have not caught up. Tasks that are usually handled by different teams in an IT company are all down to the researcher; you have to become your own sys admin, front end developer, back end developer, database administrator, and data analyst.
@@ -22,4 +26,4 @@ The infeasibility of this task leads to lax practices, from poor data storage/ma
 
 This blog is my notes and tutorials on the tools available to computational social science researchers, _at all stages of development_. I aim to write on topics from web development to causal inference to machine learning to academic writing, all using only free/open-source software to will save you time and hopefully help standardize reproducible research.
 
-email: musashi[period]harukawa[at]politics[dot]ox[fullstop]ac[.]uk
+

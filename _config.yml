@@ -16,7 +16,7 @@ social:
     - icon: fa-twitter
       link: "https://twitter.com/MJacobsHarukawa"
     - icon: fa-linkedin
-      link: ""
+      link: "www.linkedin.com/in/musashijacobsharukawa"
     - icon: fa-github
       link: "https://github.com/muhark"
 
@@ -26,7 +26,7 @@ share:
 urls:
     - text: About
       url: /about/
-    - text: Projects and Papers
+    - text: Research and Projects
       url: /projects/
     - text: XML Feed
       url: /feed.xml
