@@ -16,7 +16,7 @@ My name is Musashi, I'm a mid-stage doctoral student in political science at the
 - A _lot_ of web-scraping.
 - Deploy MariaDB and PostgreSQL databases on local and remote machines for large datasets (100+ tables, 10 million+ rows).
 
-I don't mean to claim that the computational tools are necessary for academics, but they certainly expand the realm of what is possible for an individual research with close to no budget. The obstacle, however, is that investing in and learning the skills to achieve any of these things takes time and energy, which could be spent on substantive research instead.
+I don't mean to claim that the computational tools are necessary for academics, but they certainly expand the realm of what is possible for an individual research with close to no budget. The obstacle, however, is that learning the skills to achieve any of these things is an investment of time and energy, which could be spent on substantive research instead.
 
 I'm a strong believer in collaboration and efficiency, and I hope that some day our discipline could resemble the lab-based organization of the hard sciences, but until that happens we will all have to learn to be our own IT and data science (DS) division.
 

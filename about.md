@@ -16,7 +16,7 @@ Lockdown hobbies include baking and tinkering with Linux.
 
 email: musashi[period]harukawa[at]politics[dot]ox[fullstop]ac[.]uk
 
-[CV](/static/data/docs/mharukawa-cv-2021-03-22.pdf)
+[CV](/static/docs/mharukawa-cv-2021-03-22.pdf)
 
 ## About this Blog
 

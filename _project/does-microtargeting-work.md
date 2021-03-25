@@ -21,6 +21,6 @@ All differences can be seen in the figure above. These values are relative to th
 
 ### Resources:
 
-- [Link to Paper](/static/data/docs/harukawa-2021-microtargeting.pdf)
+- [Link to Paper](/static/docs/harukawa-2021-microtargeting.pdf)
 - [Link to GitHub Repo](https://github.com/muhark/dotas-design)
 
