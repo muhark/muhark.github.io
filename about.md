@@ -4,6 +4,9 @@ title: About
 permalink: /about/
 ---
 
+- [CV](/static/docs/mharukawa-cv-2021-03-22.pdf)
+- email: musashi[period]harukawa[at]politics[dot]ox[fullstop]ac[.]uk
+
 ## About Me
 
 Hi! My name is Musashi (sometimes Jacobs-) Harukawa, I'm a 2nd year DPhil candidate in politics at the University of Oxford.
@@ -13,10 +16,6 @@ My research concerns political campaigning and computational tools for social sc
 Prior to graduate studies, I worked as a "Data Scientist" at a finance/IT conglomerate in Tokyo, and as an teacher in Moscow.
 
 Lockdown hobbies include baking and tinkering with Linux.
-
-email: musashi[period]harukawa[at]politics[dot]ox[fullstop]ac[.]uk
-
-[CV](/static/docs/mharukawa-cv-2021-03-22.pdf)
 
 ## About this Blog
 
