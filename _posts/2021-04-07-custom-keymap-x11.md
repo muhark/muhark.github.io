@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Customising your keymap in X11"
-date: 2021-03-28 17:00:00 +0100
+date: 2021-04-07 17:00:00 +0100
 categories: [misc, linux]
 ---
 
