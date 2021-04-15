@@ -28,6 +28,8 @@ urls:
       url: /about/
     - text: Research and Projects
       url: /projects/
+    - text: Teaching Website
+      url: /dpir-intro-python/index.html
     - text: XML Feed
       url: /feed.xml
 
