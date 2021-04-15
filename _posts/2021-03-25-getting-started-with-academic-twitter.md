@@ -22,7 +22,7 @@ Prerequisites:
 
 ## Step 1: Applying for Academic Track
 
-Twitter released added a new account type to its API specifically for academic researchers last month. What's more, this includes full archive search. If you've worked with Twitter data as an academic before, you'll probably be dancing like I am! If not, then count yourself luckyyou now have the possibility to access most tweets published since 2006. (I assume most and not all, but I may be corrected).
+Twitter released added a new account type to its API specifically for academic researchers last month. What's more, this includes full archive search. If you've worked with Twitter data as an academic before, you'll probably be dancing like I am! If not, then count yourself lucky you now have the possibility to access most tweets published since 2006. (I assume most and not all, but I may be corrected).
 
 In order to apply for this, you will have to be a graduate student or academic researcher working on a project that requires Twitter data. Details on application and the link to apply can be found here.
 
@@ -81,7 +81,7 @@ First things first, you need to read in your credentials from the file. The libr
 
 ~~~ python
 import searchtweets as tw
-search_args = tw.load_credentials("~/.twitter.yaml",
+search_args = tw.load_credentials("~/.twitter_keys.yaml",
                                      yaml_key="search_tweets_v2",
                                      env_overwrite=False)
 ~~~
