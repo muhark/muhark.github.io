@@ -5,17 +5,18 @@ permalink: /about/
 ---
 
 - [CV](/static/docs/mharukawa-cv-2021-03-22.pdf)
-- email: musashi[period]harukawa[at]politics[dot]ox[fullstop]ac[.]uk
+- [teaching website](https://muhark.github.io/dpir-intro-python)
+- email: `musashi[period]harukawa[at]politics[dot]ox[fullstop]ac[.]uk`
 
 ## About Me
 
-Hi! My name is Musashi (sometimes Jacobs-) Harukawa, I'm a 2nd year DPhil candidate in politics at the University of Oxford.
+Hi! My name is Musashi (sometimes Jacobs-) Harukawa. I'm a 2nd year DPhil candidate in politics at the University of Oxford, supervised by [Andy Eggers](andy.egge.rs).
 
 My research concerns political campaigning and computational tools for social scientists. Recently, that's been focused on estimating the effect of micro-targeting and developing methods for characterizing large multimedia corpora.
 
 Prior to graduate studies, I worked as a "Data Scientist" at a finance/IT conglomerate in Tokyo, and as an teacher in Moscow.
 
-Lockdown hobbies include baking and tinkering with Linux.
+Lockdown hobbies include walking, baking and tinkering with Linux.
 
 ## About this Blog
 
@@ -25,4 +26,5 @@ The infeasibility of this task leads to lax practices, from poor data storage/ma
 
 This blog is my notes and tutorials on the tools available to computational social science researchers, _at all stages of development_. I aim to write on topics from web development to causal inference to machine learning to academic writing, using only free/open-source software. The end goal: to save you time and help standardize reproducible research.
 
+I'll also write on the topics such as machine learning, causal inference, statistics, and quantitative methodology more generally.
 
