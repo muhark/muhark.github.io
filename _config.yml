@@ -42,6 +42,7 @@ markdown: kramdown
 gems:
   - jekyll-paginate
   - jekyll-gist
+  - jekyll-jupyter-notebook
 
 compress_html:
   clippings: all
