@@ -7,9 +7,9 @@ categories: [python, development]
 
 I'm going to give a demonstration of some basic techniques and principles for optimising your Python code (i.e. making it run faster), with the example of calculating prime numbers under 10000. Let's begin with a straightforward way to calculate primes:
 
-As a reminder, a prime number is a natural number ($$\mathbb{N}$$) that is greater than 1 and is not the product of two smaller natural numbers.
+As a reminder, a prime number is a natural number that is greater than 1 and is not the product of two smaller natural numbers.
 
-In order to determine whether a number is the product of two smaller natural numbers, we can use the _modulo_ operator `%`, which given $$a \% b$$, outputs the remainder of $$a/b$$. Here's an example:
+In order to determine whether a number is the product of two smaller natural numbers, we can use the _modulo_ operator `%`, which given a % b, outputs the remainder of a/b. Here's an example:
 
 
 ```python
@@ -26,11 +26,11 @@ print (10 % 4)
 Now to generate our list of primes, I propose the following algorithm:
 
 - `INITIALIZATION`:
-    - Container of prime numbers found thus far. Insert the first prime, $2$.
+    - Container of prime numbers found thus far. Insert the first prime, 2.
     - Set flag `isPrime` to `True`
 - `ITERATION`: FOR all integers `i` greater than 2 and less than 10000:
     - `ITERATION`: FOR each prime number already found `p`
-        - `CONDITION`: IF $i\%p=0$:
+        - `CONDITION`: IF i%p=0:
             - Set flag `isPrime` to `False`
     - `END` ITERATION:
         - `CONDITION`: IF `isPrime` is `True`
@@ -91,7 +91,7 @@ The code we have here is a _nested for-loop_. As you might now, a for-loop is a 
 
 In this example, the outer array is all numbers between 3 and 10000, and the inner array is a growing list of prime numbers. Note that this also means that while the time each operation within the inner loop takes should remain more or less constant, the time taken for each iteration of the outer loop will grow because the length of the inner array increases each time a new prime is found.
 
-In much simpler terms: when there is only one prime, each inner loop (checking $i$ against all prime numbers found thus far) is a single loop. As the number of primes grows, the length of time taken to check each of the primes found thus far accordingly grows. So earlier loops take less time than later ones.
+In much simpler terms: when there is only one prime, each inner loop (checking i against all prime numbers found thus far) is a single loop. As the number of primes grows, the length of time taken to check each of the primes found thus far accordingly grows. So earlier loops take less time than later ones.
 
 We can reduce the total time taken by decreasing the total number of iterations. An obvious first step is to reduce the outer array by excluding all even numbers; we know that they aren't prime, so no need to check.
 
@@ -116,7 +116,7 @@ for i in range(3, 10001, 2): # Third argument is step
 
 That nearly halved the time it took to run, which makes sense; we roughly halved the number of total loops it needed to make.
 
-But the inner loop can be sped up as well. Note that once we find that $i$ is divisible by some $p$, then it is not necessary to check subsequent values of $p$. We can end the inner loop early using a `break` statement.
+But the inner loop can be sped up as well. Note that once we find that i is divisible by some p, then it is not necessary to check subsequent values of p. We can end the inner loop early using a `break` statement.
 
 
 ```python
@@ -140,7 +140,7 @@ for i in range(3, 10001, 2):
 
 We've cut it down again by a factor of 5! (Not five factorial.)
 
-Finally, we can cut down the number of calculations even further by excluding all primes larger than the square root of $i$. I add another conditional and break:
+Finally, we can cut down the number of calculations even further by excluding all primes larger than the square root of i. I add another conditional and break:
 
 
 ```python
