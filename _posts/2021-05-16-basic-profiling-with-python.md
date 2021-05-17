@@ -83,7 +83,7 @@ for i in range(3, 10001): # Start from 1, finish at 10000
     354 ms ± 57.8 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 
 
-The output of `%%timeit` tells us that the above way of finding all prime numbers less than 10000 takes 281 milliseconds on average, with a standard deviation of 2.23 milliseconds. It also tells us that it ran the code 7 times. (Note that I have am running this on a relatively normal laptop with an i7-8550u (1.8GHz) processor. In fact, the single core speed is relatively slow on this laptop, which is a disadvantage for Python.)
+The output of `%%timeit` tells us that the above way of finding all prime numbers less than 10000 takes 354 milliseconds on average, with a standard deviation of 57.8 milliseconds. It also tells us that it ran the code 7 times. (Note that I have am running this on a relatively normal laptop with an i7-8550u (1.8GHz) processor. In fact, the single core speed is relatively slow on this laptop, which is a disadvantage for Python.)
 
 ## Step 1: Reducing Redundant Calculations
 
