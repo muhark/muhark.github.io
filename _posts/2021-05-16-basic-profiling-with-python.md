@@ -232,10 +232,10 @@ calculate_primes(container='list')
 
 ```python
 %%timeit
-calculate_primes(container='list')
+calculate_primes(container='deque')
 ```
 
-    6.64 ms ± 306 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+	5.9 ms ± 109 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
 
 
 
