@@ -38,16 +38,10 @@ baseurl: ""
 paginate: 20
 per_page: 20
 paginate_path: "/page/:num/"
-markdown: Pandoc
+markdown: kramdown
 gems:
   - jekyll-paginate
   - jekyll-gist
-  - jekyll-pandoc
-
-pandoc:
-  extensions:
-    - mathjax
-
 
 compress_html:
   clippings: all
