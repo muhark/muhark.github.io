@@ -36,7 +36,7 @@ and provides some suggestions as to why the PO framework is more mainstream in e
 
 ### An aside for my readers wondering why and what _causal inference_ is
 
-We often observe (or induce) pairs of events that we want to connect with a mechanism; $X$ _causes_ $Y$. Despite our use of it as an everyday concept, _causality_ is complicated and profound, and is embedded in our societies and understanding of reality (how would our legal system work without causality?)
+We often observe (or induce) pairs of events that we want to connect with a mechanism; \(X\) _causes_ \(Y\). Despite our use of it as an everyday concept, _causality_ is complicated and profound, and is embedded in our societies and understanding of reality (how would our legal system work without causality?)
 
 A great many research questions are interested in the _causal effect_ of some phenomenon/treatment. Examples range from assessing the impact of a medicine on an illness to the impact of a policy on a social condition, such as poverty.
 
@@ -55,7 +55,7 @@ There are some restrictions on the resulting graph, e.g. no cycles X→Y→Z→X
 
 Once you have this graph, it allows you to systematically identify _unconfounded_ relationships (through a tool called _do_-calculus).
 
-In contrast, the PO framework is characterized by a focus of the same outcome under different states. Suppose that $Y$ is your outcome, $D$ is a (usually, but not necessarily) binary treatment. We are interested in comparing the values of the outcome for the same unit under both treatment conditions: $Y(0)$ and $Y(1)$. Unfortunately, for that unit, you only ever observe one of potential outcomes (something referred to as the "fundamental problem of causal inference" (Holland 1986)).
+In contrast, the PO framework is characterized by a focus of the same outcome under different states. Suppose that \(Y\) is your outcome, \(D\) is a (usually, but not necessarily) binary treatment. We are interested in comparing the values of the outcome for the same unit under both treatment conditions: $Y(0)$ and $Y(1)$. Unfortunately, for that unit, you only ever observe one of potential outcomes (something referred to as the "fundamental problem of causal inference" (Holland 1986)).
 
 However, it is possible to obtain an unbiased estimate of the average difference between $Y(0)$ and $Y(1)$ for a given group. The simplest way to do this is to randomly assign units to the treatment ($D=1$) and control ($D=0$) groups, so that there is no systematic difference between the groups other than the treatment.
 
@@ -110,9 +110,9 @@ I'm adding a few additional bits, focused on metaphysical or epistemological que
 
 In section 4 of this article, Imbens discusses six specific issues with the DAG framework hampering its suitability to questions asked by economists. I found this one particularly interesting:
 
-The literature surrounding the PO framework emphasises the _manipulability of causes_. In simple terms, this means causal effects should not be tied to non-manipulable attributes. Taking the example of the effect of a job applicant's race or gender; instead of imagining what it would mean to _ceteris paribus_ change the race or gender of an individual, an experiment should tie the causal effect to something manipulable, such as the effect of the hiring manager's knowledge of the applicant's race or gender. 
+The literature surrounding the PO framework emphasises the _manipulability of causes_. In simple terms, this means causal effects should not be tied to non-manipulable attributes. Taking the example of the effect of a job applicant's race or gender; instead of imagining what it would mean to _ceteris paribus_ change the race or gender of an individual, an experiment should tie the causal effect to something manipulable, such as the effect of the hiring manager's knowledge of the applicant's race or gender.
 
-Imbens argues that this distinction matters, because how an individual ends up at the treated or untreated state matters. Discussing the example of the effect of obesity on health, Imbens points out that how an individual becomes obese/non-obese (e.g. through diet, exercise, or surgery) matters for the outcome. In contrast, Pearl argues that it is perfectly plausible to imagine _do(obesity=x)_, "_by which nature sets obesity to $x$, independent of diet or exercise, while keeping every thing else intact, especially the processes that respond to $X$_".
+Imbens argues that this distinction matters, because how an individual ends up at the treated or untreated state matters. Discussing the example of the effect of obesity on health, Imbens points out that how an individual becomes obese/non-obese (e.g. through diet, exercise, or surgery) matters for the outcome. In contrast, Pearl argues that it is perfectly plausible to imagine _do(obesity=x)_, "_by which nature sets obesity to \(x\), independent of diet or exercise, while keeping every thing else intact, especially the processes that respond to \(X\)_".
 
 I think I understand what Pearl is getting at, especially if we are thinking of average effects (and not individual ones). Equally, I would think that one should at least concede that it would be more useful to separate the heterogeneous effects of non-obesity, conditional on the method of becoming not obese. In that way it seems like a more pragmatic "requirement" of the PO framework, and one that is due to the PO framework's focus on policy, rather than an inherent requirement of the framework. (None of which contradicts anything Imbens says in this article).
 
@@ -133,4 +133,3 @@ Pearl introduces a classification of causal problems that he calls the _ladder o
 Imbens notes that PO framework is generally apprehensive of answering third-rung questions that depend on individual-level heterogeneity. In contrast, these kinds of questions are frequently discussed by lawyers ("but for" analyses).
 
 Finally, Imbens notes a further fourth rung: "'why', or reverse causality questions". In my undergraduate I mostly studied political science works that addressed "why" questions, such as "why did Chile transition to democracy?" Since starting research, and focusing on quantitative/causal inference methods, I realise that I answer such questions in an indirect way: "what is the average effect of _cause X_ on _outcome Y_?".
-
