@@ -7,9 +7,9 @@ categories: [python, development]
 
 I'm going to give a demonstration of some basic techniques and principles for optimising your Python code (i.e. making it run faster), with the example of calculating prime numbers under 10000. Let's begin with a straightforward way to calculate primes:
 
-As a reminder, a prime number is a natural number ($\mathbb{N}$) that is greater than 1 and is not the product of two smaller natural numbers.
+As a reminder, a prime number is a natural number ($$\mathbb{N}$$) that is greater than 1 and is not the product of two smaller natural numbers.
 
-In order to determine whether a number is the product of two smaller natural numbers, we can use the _modulo_ operator `%`, which given $a \% b$, outputs the remainder of $a/b$. Here's an example:
+In order to determine whether a number is the product of two smaller natural numbers, we can use the _modulo_ operator `%`, which given $$a \% b$$, outputs the remainder of $$a/b$$. Here's an example:
 
 
 ```python
@@ -29,14 +29,14 @@ Now to generate our list of primes, I propose the following algorithm:
     - Container of prime numbers found thus far. Insert the first prime, $2$.
     - Set flag `isPrime` to `True`
 - `ITERATION`: FOR all integers `i` greater than 2 and less than 10000:
-    - ITERATION FOR: each prime number already found `p`
-        - CONDITION: IF $i\%p=0$:
+    - `ITERATION`: FOR each prime number already found `p`
+        - `CONDITION`: IF $i\%p=0$:
             - Set flag `isPrime` to `False`
-    - END ITERATION:
-        - CONDITION: IF `isPrime` is `True`
+    - `END` ITERATION:
+        - `CONDITION`: IF `isPrime` is `True`
             - Append `p` to list of prime numbers
             - Reset flat to initialization
-- END ITERATION
+- `END` ITERATION
 
 In words, I check whether each number is divisible with zero remainder by all the primes less than itself. If it is, then I add it to the list of primes.
 
@@ -83,7 +83,7 @@ for i in range(3, 10001): # Start from 1, finish at 10000
     354 ms ± 57.8 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
 
 
-The output of `%%timeit` tells us that the above way of finding all prime numbers less than 10000 takes 281 milliseconds on average, with a standard deviation of 2.23 milliseconds. It also tells us that it ran the code 7 times. (Note that I have am running this on a relatively normal laptop with an i7-8550u (1.8GHz) processor. In fact, the single core speed is relatively slow on this laptop, which is a disadvantage for Python. But I'll get to that.)
+The output of `%%timeit` tells us that the above way of finding all prime numbers less than 10000 takes 281 milliseconds on average, with a standard deviation of 2.23 milliseconds. It also tells us that it ran the code 7 times. (Note that I have am running this on a relatively normal laptop with an i7-8550u (1.8GHz) processor. In fact, the single core speed is relatively slow on this laptop, which is a disadvantage for Python.)
 
 ## Step 1: Reducing Redundant Calculations
 
@@ -258,7 +258,7 @@ calculate_primes(container='pandas')
 
 What's going on? `numpy` and `pandas` were much slower than deques or lists!
 
-We can use the %prun magic to break this down. This runs a _profiler_, which tracks all the individual function calls.
+We can use the `%prun` magic to break this down. This runs a _profiler_, which tracks all the individual function calls.
 
 
 ```python
