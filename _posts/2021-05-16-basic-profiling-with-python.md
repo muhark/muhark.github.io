@@ -1,4 +1,11 @@
-I'm going to give a demonstration of some basic techniques and principles for optimising your Python code (i.e. making it run faster), with the example of calculataing prime numbers under 10000. Let's begin with a straightforward way to calculate primes:
+---
+layout: post
+title: "Speeding Up Your Python Code!"
+date: 2021-05-16 12:00:00 +0100
+categories: [python, development]
+---
+
+I'm going to give a demonstration of some basic techniques and principles for optimising your Python code (i.e. making it run faster), with the example of calculating prime numbers under 10000. Let's begin with a straightforward way to calculate primes:
 
 As a reminder, a prime number is a natural number ($\mathbb{N}$) that is greater than 1 and is not the product of two smaller natural numbers.
 
@@ -18,10 +25,10 @@ print (10 % 4)
 
 Now to generate our list of primes, I propose the following algorithm:
 
-- INITIALIZATION:
+- `INITIALIZATION`:
     - Container of prime numbers found thus far. Insert the first prime, $2$.
     - Set flag `isPrime` to `True`
-- ITERATION: FOR all integers `i` greater than 2 and less than 10000:
+- `ITERATION`: FOR all integers `i` greater than 2 and less than 10000:
     - ITERATION FOR: each prime number already found `p`
         - CONDITION: IF $i\%p=0$:
             - Set flag `isPrime` to `False`
