@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Object-Oriented Matplotlib"
+date: 2021-06-06 12:00:00 +0100
+categories: [python, development]
+---
+
+
 Creating figures for client trading reports was one the first things I had to do in Python, and probably what first got me excited about data science more broadly. In this post I want to write a little bit about what I see as the better way to approach data visualization with the `matplotlib` library, and also discuss how it helped me understand object-oriented programming.
 
 Most of this post is based on my observations and experience. I've never had the chance to formally study data visualization, but I've probably written over two thousand scripts creating data visuals at this point (automating client reports was my first big task at SBI).
