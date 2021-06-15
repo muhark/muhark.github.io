@@ -2,7 +2,6 @@
 layout: post
 title: "Object-Oriented Matplotlib"
 date: 2021-06-06 12:00:00 +0100
-categories: [python, development]
 ---
 
 
