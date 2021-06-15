@@ -44,6 +44,14 @@ a:hover {
   color: #ffcc66;
   text-decoration: underline;
 }
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #f2777a;
+  background-color: #414141;
+  white-space: nowrap;
+  border-radius: 4px;
+}
 
 /* Layout */
 .main-layout {

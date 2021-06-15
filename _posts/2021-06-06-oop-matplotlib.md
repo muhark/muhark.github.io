@@ -53,7 +53,7 @@ plt.plot(x, y)
 
 
     
-![png](images/2021-06-06-oop-matplotlib_3_1.png)
+![](https://raw.githubusercontent.com/muhark/muhark.github.io/master/static/img/_posts/2021-06-06-oop-matplotlib_3_1.png)
     
 
 
@@ -74,7 +74,7 @@ ax.plot(x, y)
 
 
     
-![png](images/2021-06-06-oop-matplotlib_4_1.png)
+![](https://raw.githubusercontent.com/muhark/muhark.github.io/master/static/img/_posts/2021-06-06-oop-matplotlib_4_1.png)
     
 
 
@@ -121,7 +121,7 @@ plt.title('Subplot 2') # Add subplot title
 
 
     
-![png](images/2021-06-06-oop-matplotlib_6_1.png)
+![](https://raw.githubusercontent.com/muhark/muhark.github.io/master/static/img/_posts/2021-06-06-oop-matplotlib_6_1.png)
     
 
 
@@ -158,7 +158,7 @@ axs[1].set_title('Subplot 2')
 
 
     
-![png](images/2021-06-06-oop-matplotlib_8_1.png)
+![](https://raw.githubusercontent.com/muhark/muhark.github.io/master/static/img/_posts/2021-06-06-oop-matplotlib_8_1.png)
     
 
 
@@ -212,7 +212,7 @@ ax4 = fig.add_subplot(gs[2:3, 1:2], sharex=ax3) # Bottom-right
 
 
     
-![png](images/2021-06-06-oop-matplotlib_12_0.png)
+![](https://raw.githubusercontent.com/muhark/muhark.github.io/master/static/img/_posts/2021-06-06-oop-matplotlib_12_0.png)
     
 
 
@@ -241,7 +241,7 @@ fig
 
 
     
-![png](images/2021-06-06-oop-matplotlib_14_0.png)
+![](https://raw.githubusercontent.com/muhark/muhark.github.io/master/static/img/_posts/2021-06-06-oop-matplotlib_14_0.png)
     
 
 
@@ -275,7 +275,7 @@ fig
 
 
     
-![png](images/2021-06-06-oop-matplotlib_16_0.png)
+![](https://raw.githubusercontent.com/muhark/muhark.github.io/master/static/img/_posts/2021-06-06-oop-matplotlib_16_0.png)
     
 
 
@@ -324,7 +324,7 @@ with plt.rc_context(rc_params):
 
 
     
-![png](images/2021-06-06-oop-matplotlib_19_0.png)
+![](https://raw.githubusercontent.com/muhark/muhark.github.io/master/static/img/_posts/2021-06-06-oop-matplotlib_19_0.png)
     
 
 
