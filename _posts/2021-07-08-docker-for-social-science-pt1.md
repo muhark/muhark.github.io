@@ -176,7 +176,7 @@ This output describes all of the currently running docker containers:
 - `IMAGE`: image the container was generated from.
 - `COMMAND`: command running in the docker container.
 - `CREATED`: time since container was created.
-- `STATUS`: 'Up' indicates that the container is active. Note that by default, `docker container ls` only shows active containers. To see inactive containers, add ` -a` after `ls`.
+- `STATUS`: 'Up' indicates that the container is active. Note that by default, `docker container list` only shows active containers.
 - `NAMES`: if not given, a randomly generated name to refer to the container.
 
 _Note_: Many guides use the older `docker ps` command, short for "process status". Feel free to use either; the `ps` may seem more natural to those familiar with shell tools, while `docker ls`/`list` is consistent with the typology introduced in more recent versions of Docker. And yes, you can substitute `list` for `ls`.
