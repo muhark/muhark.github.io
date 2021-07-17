@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "Making Your Life Easier with Docker (pt 1)"
-date: 2021-07-10 12:00:00 +0100
+date: 2021-07-17 12:00:00 +0100
 categories: [bash, development, linux, docker]
 ---
+
+![Docker logo](https://www.docker.com/sites/default/files/d8/2019-07/horizontal-logo-monochromatic-white.png)
 
 The first hurdle to becoming a computational social scientist is downloading and installing all the tools you need to begin writing code for your analyses. Unlike the act of coding itself, the task of managing your tools and keeping your libraries up-to-date is not something that becomes easier over time. In fact, the opposite is often true. How often have you wanted to send a colleague some code, or run replication code, only to find that your version of R is incompatible with a necessary library?
 
@@ -33,7 +35,7 @@ Specifically, I'll show you how to have an installation of RStudio or Python+Jup
 Use the following command to run Jupyter Lab with Python, R and Julia pre-installed running in your current directory:
 
 ~~~{bash}
-sudo docker run \
+docker run \
 	--rm -p 8888:8888 \
 	-v "$(pwd)":/home/jovyan/work:z \
 	-e JUPYTER_ENABLE_LAB=yes \
@@ -41,7 +43,11 @@ sudo docker run \
 	start-notebook.sh --NotebookApp.token='<password>'
 ~~~
 
-Then open a browser to `localhost:8888` and log in with the token you set as `<password>`.
+_Note:_ Windows users should replace backslash with backtick.
+
+Then open a browser to `localhost:8888` and log in with the token you set as `<password>`. Double-click on the `work` folder in the left-hand tab, and you should see the files in the directory you  started the process in.
+
+_Note_: Mac users will get a prompt asking whether to permit Docker to access the file system. You should say yes.
 
 To kill the process you can hit Ctrl+C twice.
 
@@ -68,17 +74,13 @@ Do let me know what kinds of problems you run into; it'll help me improve this g
 
 ## Docker Terminology
 
-There are many parts to Docker. Keeping in mind that our goal is to make the standard data analysis toolkit portable, I'll focus on the three fundamental components of Docker that are relevant to this post. These are:
-
-- _Image_
-- _Container_
-- _Volume_
+There are many parts to Docker. Keeping in mind that our goal is to make the standard data analysis toolkit portable, let's begin by focusing on the distinction between an _image_ and a _container_.
 
 A **Docker Image** is a pre-packaged software stack, and can be thought of as a template. These can be downloaded from and shared via Docker Hub.
 
 A **Docker Container** is an instance of an image. These are what actually run on your machine. As we'll see, Docker containers are like an isolated environment running inside your computer. Once a container is killed, it is completely erased along with any changes you made to it.
 
-A **Docker Volume** is a persistent storage volume that can be attached to a docker container. This is one of two ways to use 
+A **Docker Volume** is a persistent storage volume that can be attached to a docker container. I'll discuss these further down.
 
 ## Tutorial 1: Downloading and Running an Image
 
@@ -102,7 +104,7 @@ The following command will:
 - provide terminal in this container
 
 ~~~{bash}
-docker run -it --rm ubuntu:latest
+docker run -it ubuntu /bin/bash
 ~~~
 
 Breaking down this command:
@@ -111,8 +113,8 @@ Breaking down this command:
 - `-it`: combining two options, `-i` and `-t`:
 	- `-i`: start an interactive session
 	- `-t`: provide a terminal in the interactive session
-- `--rm`: remove the container once the command is finished
-- `ubuntu:latest`: the image name. The `:latest` is optional, as by default the latest image is used.
+- `ubuntu`: the image name. Ubuntu is a popular Linux distro.
+- `/bin/bash`: the command to run when the container is started. Note that in this case this command is redundant; the Ubuntu image automatically runs `bash` when started, but I'm putting this here for the sake of clarity.
 
 You should now have a prompt that looks something like the following. Note that the string after `root@` will be different:
 
@@ -135,12 +137,13 @@ Finally, exit the container with `exit` or Ctrl+D.
 Try running the original command again to create a new container:
 
 ~~~{bash}
-docker run -it --rm ubuntu:latest
+docker run -it ubuntu /bin/bash
 ~~~
 
 Note that the string after `root@` should be different this time. Now try `ls`; you'll see that `README.txt` is gone!
 
 Why is this the default behaviour? In short, the image is a template, and the container is always created based on the image that it is given. This stateless behaviour is desirable when we want to deploy identical copies of an environment in many different locations.
+
 
 ## Tutorial 2: Non-Interactive Sessions
 
@@ -157,7 +160,7 @@ docker run -dp 8000:80 docker/getting-started
 To see currently running docker containers, we can use the following command:
 
 ~~~{bash}
-docker container ls
+docker container list
 ~~~
 
 You should see something like the following:
@@ -176,7 +179,7 @@ This output describes all of the currently running docker containers:
 - `STATUS`: 'Up' indicates that the container is active. Note that by default, `docker container ls` only shows active containers. To see inactive containers, add ` -a` after `ls`.
 - `NAMES`: if not given, a randomly generated name to refer to the container.
 
-_Note_: Many guides use the older `docker ps` command, short for "process status". Feel free to use either; the `ps` may seem more natural to those familiar with shell tools, while `docker ls`/`list` is consistent with the typology introduced in more recent versions of Docker.
+_Note_: Many guides use the older `docker ps` command, short for "process status". Feel free to use either; the `ps` may seem more natural to those familiar with shell tools, while `docker ls`/`list` is consistent with the typology introduced in more recent versions of Docker. And yes, you can substitute `list` for `ls`.
 
 A container has its own ports (if you don't know what these are, you can think of them as communication channels). Remember that when we instantiated the container we linked port 8000 of the host machine (your computer) to port 80 of the container with `-p 8000:80`.
 
@@ -191,6 +194,25 @@ docker rm -f <container_name>
 In my case, I wrote `wizardly_chaum` in place of `<container_name>`. What you write will depend on the output of `docker container ls`.
 
 Also note that `rm` means "remove", and `-f` means "force". By default, you cannot remove actively running containers. If you pass `-f` then you can.
+
+### Cleaning Up Containers
+
+By default, when a container has finished running its command, it will simply become inactive. To see all containers, including inactive ones, run the following command:
+
+~~~{bash}
+docker container list -a
+~~~
+
+`-a` stands for "all". If you ran the examples in the previous tutorial you should see two inactive Ubuntu containers with status `Exited (130)` some period of time ago. You can clean these up using the `docker rm` command, followed by the names of the ubuntu containers.
+
+To avoid having to clean up inactive containers, you can add the `--rm` option to the `docker run` command so that the container removes itself once its command is completed. Thus, the earlier Ubuntu example would instead be:
+
+~~~{bash}
+docker run -it --rm ubuntu /bin/bash
+~~~
+
+Once you exit this, try running `docker container list -a`–there should be nothing left behind! From here on I will add the `--rm` argument to examples because I can't think of a good reason to leave inactive containers behind, and I suspect at least some of you are the kind to leave 30+ tabs open in the browser at once.
+
 
 # Tutorial 3: Jupyter in Docker
 
@@ -256,13 +278,17 @@ Breaking down the third line:
 - `/home/jovyan/work`: the Jupyter image has a non-root user called `jovyan`. The default working directory for this user is the one just listed.
 - `:z`: extends the permissions of the `jovyan` user onto the directory that it has been mounted on. Without this, you'll be unable to make any changes on the host file system from a user within the container.
 
-I recommend that you `cd` (change directory) into the directory where you'll be doing your analysis and then run this command. You can always substitute `$(pwd)` for any valid path on the host file system.
+Now when you start Jupyter, you will begin in the container's `jovyan` user's home directory, but if you navigate into `work`, you should see your own directory where you mounted this container.
+
+Note that your system may ask you whether to give Docker permission to write to your file system–you should say yes.
+
+Finally, I recommend that you `cd` (change directory) into the directory where you'll be doing your analysis and then run this command. You can always substitute `$(pwd)` for any valid path on the host file system.
 
 ## Installing Libraries at Runtime
 
 In order to install additional libraries at runtime, we could use Jupyter's functionality for executing shell code by prefixing commands with `!`, but I prefer to do everything directly in a terminal. Fortunately getting a terminal on a running container is relatively straightforward.
 
-After obtaining the name of the container with `docker container ls`, you can use the following command to open a terminal in the container:
+After obtaining the name of the container with `docker container list`, you can use the following command to open a terminal in the container:
 
 ~~~{bash}
 docker exec -it <container_name> /bin/bash
@@ -315,10 +341,11 @@ docker build -t pytorch-cpuonly .
 - `pytorch-cpuonly`: the name I gave to my Docker image. Feel free to change it! Note that you can also suffix this with `:latest` or something else to provide versioning.
 - `.`: execute the build in the current directory (where the Dockerfile is).
 
+Now, when you want to run this custom image, replace `jupyter/datascience-notebook` with whatever name you gave for your custom image.
+
 # Up Next
 
 I only started learning Docker two weeks ago, and it's already a core part of my development setup. In particular, it's made working on multiple machines much smoother (I use my old laptop to dry-run intensive code).
 
 In my next post (hopefully sooner than in a month), I'll give a short demo on how to run RStudio Server in a Docker container. In the meantime, feel free to contact me on Twitter (or elsewhere) to tell me things you want to learn/see!
-
 

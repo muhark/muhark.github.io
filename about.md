@@ -10,7 +10,7 @@ permalink: /about/
 
 ## About Me
 
-Hi! My name is Musashi (sometimes Jacobs-) Harukawa. I'm a 2nd year DPhil candidate in politics at the University of Oxford, supervised by [Andy Eggers](andy.egge.rs).
+Hi! My name is Musashi (sometimes Jacobs-) Harukawa. I'm a 2nd year DPhil candidate in politics at the University of Oxford, supervised by [Andy Eggers](https://andy.egge.rs).
 
 My research concerns political campaigning and computational tools for social scientists. Recently, that's been focused on estimating the effect of micro-targeting and developing methods for characterizing large multimedia corpora.
 
