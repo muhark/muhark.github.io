@@ -44,7 +44,7 @@ As with any NLP task (or any data analysis task for that matter), there are two 
 
 I'll be using the publicly available `tweets_hate_speech_detection` dataset from Huggingface. (TW: some of these tweets are pretty nasty, so you may prefer to choose a different dataset.)
 
-```{python}
+```python
 # %%
 import torch
 import datasets
@@ -60,7 +60,7 @@ We need a function to split up the raw tweets into lists of tokens. I'll keep th
 4. Remove stopwords/empty tokens
 5. Apply snowball stemmer to remainder
 
-```{python}
+```python
 # %%
 # For simplicity let's remove alphanumeric but keep @, #
 import re
@@ -89,7 +89,7 @@ From these we can construct some useful variables for the future. But first let'
 - `n_v`: Size of vocab
 - `id2tok`/`tok2id`: Move back and forth between tokens and numeric ids
 
-```{python}
+```python
 # %%
 from collections import Counter
 
@@ -122,7 +122,7 @@ Now finally we need to prepare the "sliding window" used in the Word2Vec algorit
 
 Let's implement this:
 
-```{python}
+```python
 def windowizer(row, wsize=3):
     """
     Windowizer function for Word2Vec. Converts sentence to sliding-window
@@ -165,7 +165,7 @@ The processing that I am doing here is:
 
 Also note that this is not the most RAM-efficient way of implementing this.
 
-```{python}
+```python
 from torch.utils.data import Dataset, DataLoader
 
 class Word2VecDataset(Dataset):
@@ -191,7 +191,7 @@ And now we wrap the dataset with a DataLoader. Note that at this point I'm defin
 `BATCH_SIZE` is the number of observations returned with each call. Much of the speed-ups from GPU processing come from massive batched matrix computations. When choosing batch size, remember that it's generally at trade-off between VRAM usage and speed, except for when the dataloader itself is the bottleneck. To speed up the dataloader, we can pass an argument to `num_workers` to enable parallelisation on the data preparation and loading.
 
 
-```{python}
+```python
 BATCH_SIZE = 2**14
 N_LOADER_PROCS = 10
 
@@ -226,7 +226,7 @@ Since these are mirror images of each other (the difference is the order of inpu
 
 Before we begin, however, a quick aside about how to generating one-hot encodings. Here's how we would do it "manually":
 
-```{python}
+```python
 from torch import nn
 
 size = 10
@@ -260,7 +260,7 @@ PyTorch implements this more efficiently using their `nn.Embedding` object, whic
 
 Here's the equivalent code.
 
-```{python}
+```python
 embedding_layer = nn.Embedding(size, 1)
 
 with torch.no_grad():
@@ -275,7 +275,7 @@ print(embedding_layer(torch.tensor(input)))
 
 With that out of the way, here's how I implement the Word2Vec model.
 
-```{python}
+```python
 class Word2Vec(nn.Module):
     def __init__(self, vocab_size, embedding_size):
         super().__init__()
@@ -310,7 +310,7 @@ The longer we train the network, the more perfectly it will learn the training d
 
 We use a for-loop to do our training. Here's the set-up:
 
-```{python}
+```python
 # Instantiate the model
 EMBED_SIZE = 100 # Quite small, just for the tutorial
 model = Word2Vec(n_v, EMBED_SIZE)
@@ -335,7 +335,7 @@ optimizer = torch.optim.AdamW(model.parameters(), lr=LR)
 
 To begin, let's run a ten loops in the training loop.
 
-```{python}
+```python
 from tqdm import tqdm  # For progress bars
 
 progress_bar = tqdm(range(EPOCHS * len(dataloader['train'])))
@@ -357,7 +357,7 @@ for epoch in range(EPOCHS):
 
 Let's plot the running loss:
 
-```{python}
+```python
 import matplotlib.pyplot as plt
 plt.plot(running_loss)
 ```
@@ -367,14 +367,14 @@ As we continue the training, the marginal increase in accuracy will decrease. Re
 Remember that the embeddings are the edge weights between the hidden layer and the output. Let's access and inspect the ones corresponding to "freedom", "mom", "school" and "#power".
 
 
-```{python}
+```python
 wordvecs = model.expand.weight.cpu().detach().numpy()
 tokens = ['freedom', 'mom', 'school', '#hate']
 ```
 
 Now let's get the closest vectors (by various metrics):
 
-```{python}
+```python
 from scipy.spatial import distance
 import numpy as np
 
@@ -407,7 +407,7 @@ for word in tokens:
 Now let's train the model for another 90 epochs and see how these change:
 
 
-```{python}
+```python
 EPOCHS = 90
 progress_bar = tqdm(range(EPOCHS * len(dataloader['train'])))
 for epoch in range(EPOCHS):
@@ -428,7 +428,7 @@ plt.plot(running_loss)
 
 Extracting the new word vectors:
 
-```{python}
+```python
 wordvecs_100_epochs = model.expand.weight.cpu().detach().numpy()
 dmat_100_epochs = get_distance_matrix(wordvecs_100_epochs, 'cosine')
 for word in tokens:
