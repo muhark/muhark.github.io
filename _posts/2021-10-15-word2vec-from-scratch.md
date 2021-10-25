@@ -45,7 +45,6 @@ As with any NLP task (or any data analysis task for that matter), there are two 
 I'll be using the publicly available `tweets_hate_speech_detection` dataset from Huggingface. (TW: some of these tweets are pretty nasty, so you may prefer to choose a different dataset.)
 
 ```python
-# %%
 import torch
 import datasets
 
@@ -61,7 +60,6 @@ We need a function to split up the raw tweets into lists of tokens. I'll keep th
 5. Apply snowball stemmer to remainder
 
 ```python
-# %%
 # For simplicity let's remove alphanumeric but keep @, #
 import re
 from nltk.corpus import stopwords
@@ -90,7 +88,6 @@ From these we can construct some useful variables for the future. But first let'
 - `id2tok`/`tok2id`: Move back and forth between tokens and numeric ids
 
 ```python
-# %%
 from collections import Counter
 
 counts = Counter([i for s in dataset['train']['all_tokens'] for i in s])
@@ -249,6 +246,10 @@ print(linear_layer.weight)
 print(linear_layer(ohe))
 ```
 
+    Parameter containing:
+    tensor([[0., 1., 2., 3., 4., 5., 6., 7., 8., 9.]], requires_grad=True)
+    tensor([3.], grad_fn=<SqueezeBackward3>)
+
 What's going on here?
 
 1. First, we create a tensor of zeros equal in size to the vocabulary, and then assign `1` to the value corresponding to our feature.
@@ -272,6 +273,19 @@ print(embedding_layer.weight)
 print(embedding_layer(torch.tensor(input)))
 
 ```
+
+    Parameter containing:
+    tensor([[0.],
+            [1.],
+            [2.],
+            [3.],
+            [4.],
+            [5.],
+            [6.],
+            [7.],
+            [8.],
+            [9.]], requires_grad=True)
+    tensor([3.], grad_fn=<EmbeddingBackward>)
 
 With that out of the way, here's how I implement the Word2Vec model.
 
@@ -362,6 +376,8 @@ import matplotlib.pyplot as plt
 plt.plot(running_loss)
 ```
 
+    <output truncated>
+
 As we continue the training, the marginal increase in accuracy will decrease. Remember, though, that accuracy is not the main goal with embedding models. Let's check out our embeddings.
 
 Remember that the embeddings are the edge weights between the hidden layer and the output. Let's access and inspect the ones corresponding to "freedom", "mom", "school" and "#power".
@@ -369,7 +385,7 @@ Remember that the embeddings are the edge weights between the hidden layer and t
 
 ```python
 wordvecs = model.expand.weight.cpu().detach().numpy()
-tokens = ['freedom', 'mom', 'school', '#hate']
+tokens = ['good', 'father', 'school', 'hate']
 ```
 
 Now let's get the closest vectors (by various metrics):
@@ -394,15 +410,15 @@ dmat = get_distance_matrix(wordvecs, 'cosine')
 for word in tokens:
     print(word, [t[1] for t in get_k_similar_words(word, dmat)], "\n")
 ```
-```
->  freedom ['knowledg', 'spring', 'apolog', 'imagin', '#masterkeyexperi', 'handl', 'berni', 'air', 'farmer', '#present']
->
->  mom ['dream', 'ahead', 'cast', 'nobodi', 'came', 'murder', 'hand', 'mean', 'crack', 'sometim']
->
->  school ['amp', 'tri', 'today', 'happi', 'june', 'open', 'thing', 'father', 'bihday', 'come']
->
->  power ['state', 'also', 'countri', '#inspir', '#acn', 'speak', 'updat', 'vicin', 'releas', 'sho']
-```
+
+good ['tomorrow', 'even', 'great', 'one', 'got', 'see', 'work', 'today', 'love', '@user']
+
+father ['day', 'dad', '#fathersday', 'happi', '#dad', 'us', 'fathersday', 'thank', 'wish', '#smile']
+
+school ['favorit', 'first', 'amp', 'islam', 'trump', 'today', 'man', 'last', 'call', 'still']
+
+hate ['@user', 'amp', 'reason', 'yet', 'make', 'would', 'someon', 'final', 'way', 'say']
+
 
 Now let's train the model for another 90 epochs and see how these change:
 
@@ -423,7 +439,6 @@ for epoch in range(EPOCHS):
         progress_bar.update(1)
     epoch_loss /= len(dataloader['train'])
     running_loss.append(epoch_loss)
-plt.plot(running_loss)
 ```
 
 Extracting the new word vectors:
@@ -435,18 +450,32 @@ for word in tokens:
     print(word, [t[1] for t in get_k_similar_words(word, dmat_100_epochs)], "\n")
 ```
 
-There are some big changes in the "#hate" vectors.
+    good ['great', 'happi', '@user', 'day', 'today', 'amp', 'love', 'make', 'even', 'im']
 
-```
-> freedom ['#masterkeyexperi', 'stuck', 'forgiv', 'rat', 'biggest', 'independ', 'histori', 'imagin', 'race', 'leak']
->
-> mom ['may', 'expect', 'came', 'remain', 'b', 'sale', 'price', 'bihday', 'product', 'previous']
->
-> school ['month', 'back', 'book', 'tomorrow', 'first', 'week', 'got', 'year', 'end', 'today']
->
-> #hate ['#trump', '#bigotri', '#resist', 'stand', 'american', '#ignor', 'enemi', 'funni', 'defeat', '#notmypresid']
-```
+    father ['dad', 'day', '#fathersday', 'happi', 'great', 'love', 'god', 'one', 'hope', 'enjoy']
+
+    school ['first', 'week', 'year', 'month', 'back', 'see', 'next', 'last', 'tomorrow', 'one']
+
+    hate ['peopl', 'would', 'kill', 'mani', 'say', 'much', 'man', 'dont', 'someon', 'sad']
+
+These vectors (unfortunately) seem like a better ordering of most similar words within the context of co-occurrence of the corpus. (Deeper analysis in follow-up post, I promise!)
 
 ## Wrap-up
 
-I'll leave it off for here since it's been 3 months since I wrote a post, but there's some pretty neat stuff you can do with tensorboard to track, explore and visualise embeddings. Until next time!
+I'll leave it off for here since it's been 3 months since I wrote a post, but there's some pretty neat stuff you can do with tensorboard to track, explore and visualise embeddings. I also want to write a bit more about what's going on, and what to make of `Word2Vec` embeddings now that we have seen how to generate them.
+
+
+As a last note, to save your embeddings and model, you can use `torch.save(model.state_dict())` to save the model for later usage.
+
+```python
+torch.save(model.state_dict(), 'word2vec-twitter_hate-100epochs.checkpoint')
+```
+
+Then to load it you instantiate a model and load in the pre-trained weights:
+
+```python
+model2 = Word2Vec(n_v, EMBED_SIZE)
+model2.load(torch.load('word2vec-twitter_hate-100epochs.checkpoint'))
+```
+
+That's all for now!
