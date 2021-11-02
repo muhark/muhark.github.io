@@ -22,6 +22,7 @@ All differences can be seen in the figure above. These values are relative to th
 ### Resources:
 
 - [Link to Paper](/static/docs/harukawa-2021-microtargeting.pdf)
+- [Link to Slides](https://muhark.github.io/dpir-intro-python/misc_presentations/cess-mt21-pres.html)
 - [Link to Supplementary Info](/static/docs/harukawa-2021-microtargeting-si.pdf)
 - [Link to GitHub Repo](https://github.com/muhark/dotas-design)
 

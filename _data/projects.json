@@ -4,6 +4,13 @@
 		"name": "Estimating the Effect of Micro-Targeting",
 		"image": "effect_of_targeting_final.png",
 		"date": "Oct 2020",
-		"tags": ["Survey Experiments", "Research", "Machine Learning", "Causal Inference"]
+		"tags": ["Survey Experiments", "Research", "Machine Learning", "Campaigns"]
+	},
+	{
+		"slug": "multimodal-ad-transformers",
+		"name": "Multimodal Transformer Strategies for Political Ads",
+		"image": "mumin.png",
+		"date": "Oct 2021",
+		"tags": ["Research", "Machine Learning", "Text-as-Data", "Campaigns"]
 	}
 ]
