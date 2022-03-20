@@ -12,5 +12,12 @@
 		"image": "mumin.png",
 		"date": "Oct 2021",
 		"tags": ["Research", "Machine Learning", "Text-as-Data", "Campaigns"]
+	},
+	{
+		"slug": "electoral-constraints",
+		"name": "Detecting Electoral Constraints on Twitter with Unsupervised Text-as-Data",
+		"image": "electoral-constraints.png",
+		"date": "Jul 2019",
+		"tags": ["Research", "Text-as-Data", "Twitter", "Machine Learning", "Electoral Systems"]
 	}
 ]

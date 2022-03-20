@@ -1,6 +1,6 @@
 ---
 layout: project_single
-title: "Detecting Electoral Constraints with Unsupervised Text-as-Data"
+title: "Detecting Electoral Constraints on Twitter with Unsupervised Text-as-Data"
 slug: "electoral-constraints"
 ---
 
