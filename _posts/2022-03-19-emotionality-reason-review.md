@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "On Emotionality and Reason in Political Language (Gennaro and Ash 2021)"
+title: "On Emotion and Reason in Political Language (Gennaro and Ash 2021)"
 date: 2022-03-19 00:00:00 +0000
 categories: [reading, ml, nlp]
 ---
@@ -41,15 +41,15 @@ Remember that the authors remove all words other than nouns, verbs and adjective
 
 In this space, we represent speeches and "poles" as a weighted average of the individual word vectors. Given that nouns/verbs/adjectives occurring in similar contexts are encoded to similar directions, we can think of this approach as a "fuzzy continuous dictionary" logic. Fuzzy because we include words that aren't in the lexicons, but occur in similar contexts, and continuous because our final measure of cosine distance is continuous.
 
-Will this measure emotionality/rationality? To the extent that emotionality and rationality in political speech can be described as phenomena occuring at the lexical and semantic level, Gennaro and Ash provide a sensible strategy for flexibly measuring the similarity of documents to a theoretically motivated tokens.
+Will this measure emotionality/rationality? To the extent that emotionality and rationality in political speech can be described as phenomena occuring at the lexical and semantic level, Gennaro and Ash provide a sensible strategy for flexibly measuring the similarity of documents to a theoretically motivated list of tokens.
 
 On the other hand, I'm not sure that I think of emotionality and rationality being solely or even primarily lexical/semantic phenomena. The perception of rationality in the listener, for instance, is constructed partially by lexical choices (and the meaning of those words), but more imporantly it exists in the structuring of the sentence (syntax, or in the language of LFG the **c-structure** and **d-structure**). When I think of speeches conveying "rationality", I think primarily of the use of deduction, entailment, and so on. Emotionality may be more describable by lexical semantics, but likewise I think that much of emotionality in practice exists in prosody (**p-structure**) and listener-side effects (such as perceived gender or race). 
 
 Is this a problem for Gennaro and Ash's method? I'm not sure. A cautious take would be: "given that their measure does not directly measure the linguistic phenomena that produce a perception of emotionality/rationality, but rather strongly correlates with it because of the association between lexical semantics and syntax/prosody etc., their proof is purely inductive and therefore we have not established the conditions under which their method will fail". On the other hand I reject the notion that the onus is on the researcher to define the precise scope conditions of their method in all cases, especially where those bounds are difficult (or impossible) to deductively establish. However, in the absence of that elusive perfect scenario where what we want to measure in theory and what we are able to measure in practice are the exact same, clear explication of the derivation of your measure is crucial to avoid "abuse" of the measure in downstream analyses.
 
-I hope that the authors do not take any of this as an attack on their work–I thoroughly enjoyed reading and thinking about this paper, and hope political science continues to move in this direction.
+I hope that the authors do not take any of this as an attack on their work! I thoroughly enjoyed reading and thinking about this paper, and hope political science continues to move in this direction.
 
-### A small aside on vector norms:
+### Finally, a small aside on vector norms:
 
 _Why not take the vector norm before averaging word vectors_? I discussed this question with a colleague specifically in terms of whether this would bias the results; in short I don't think it does, but I still think it's an odd choice. Here's why.
 
