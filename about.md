@@ -16,7 +16,7 @@ I research computational/quantitative methods, especially those concerning unstr
 
 Prior to graduate studies, I worked as a Data Scientist at a finance/IT conglomerate in Tokyo, and as an teacher in Moscow. A long time ago, I grew up in NYC.
 
-- [CV](/static/docs/mharukawa-cv.pdf)
+- [CV](/static/docs/mharukawa_cv.pdf)
 - [teaching website](https://muhark.github.io/dpir-intro-python)
 - email: `musashi[period]harukawa[at]politics[dot]ox[fullstop]ac[.]uk`
 

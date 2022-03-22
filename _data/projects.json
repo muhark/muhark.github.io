@@ -19,5 +19,12 @@
 		"image": "electoral-constraints.png",
 		"date": "Jul 2019",
 		"tags": ["Research", "Text-as-Data", "Twitter", "Machine Learning", "Electoral Systems"]
+	},
+	{
+		"slug": "attribution-rationales-annotation",
+		"name": "Using Attribution and Rationales to Characterize Campaign Style",
+		"image": "biden-attribution.png",
+		"date": "Ongoing",
+		"tags": ["Research", "Text-as-Data", "Campaigns", "Interpretable ML"]
 	}
 ]
