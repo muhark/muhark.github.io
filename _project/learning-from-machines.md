@@ -14,4 +14,4 @@ _Identifying the differing ways in which political actors and groups express the
 ### Resources
 
 - [Link to Paper](/static/docs/harukawa-2022-attribution.pdf)
-- [Slides](/static/docs/harukawa-pip-colloq.html)
+- [Slides](/static/docs/harukawa-2022-attribution-slides.html)
