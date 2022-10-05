@@ -6,15 +6,12 @@ permalink: /about/
 
 ## Me
 
-Hi! My name is Musashi (sometimes Jacobs-) Harukawa. I'm a final year DPhil candidate in politics at the University of Oxford supervised by [Andy Eggers](https://andy.egge.rs) and [Ray Duch](https://www.raymondduch.com/).
+Hi! My name is Musashi (sometimes Jacobs-) Harukawa.
+I'm a postdoctoral researcher at the [Data-Driven Social Science Initiative](https://ddss.princeton.edu) at Princeton University. I research computational/quantitative methods, especially those concerning unstructured data. Recently I am interested in the applications of deep learning tools in computational social science, and have done work on [multimodal classifiers for political advertisements](https://muhark.github.io/project/multimodal-ad-transformers/) and [using model interpretability methods to characterize campaign style](https://muhark.github.io/project/attribution-rationales-annotation/).
 
-As of December 2021, I am also a pre-doctoral researcher at University College London working with [Lucy Barnes](https://www.ucl.ac.uk/political-science/people/dr-lucy-barnes) on the UKRI-funded [MENMOPE](https://www.ucl.ac.uk/political-science/mental-models-political-economy-menmope) project, where I am working on methods for detecting and linking ideas about the economy between diverse corpora.
+Previously, I was a pre-doctoral researcher at University College London working with [Lucy Barnes](https://www.ucl.ac.uk/political-science/people/dr-lucy-barnes) on the UKRI-funded [MENMOPE](https://www.ucl.ac.uk/political-science/mental-models-political-economy-menmope) project, and did my DPhil in Politics at the University of Oxford supervised by [Andy Eggers](http://andy.egge.rs) and [Ray Duch](https://www.raymondduch.com/).
 
-My own research concerns political campaigning and computational tools for social scientists. My [job market paper](https://muhark.github.io/project/does-microtargeting-work/) presents a novel survey experiment where I measure the effect of micro-targeted political advertising by training a model to target respondents with individually optimal advertisements "on-the-fly".
-
-I research computational/quantitative methods, especially those concerning unstructured data. Recently I am interested in the applications of deep learning tools in computational social science, and have done work on [multimodal classifiers for political advertisements](https://muhark.github.io/project/multimodal-ad-transformers/) and [using model interpretability methods to characterize campaign style](https://muhark.github.io/project/attribution-rationales-annotation/).
-
-Prior to graduate studies, I worked as a Data Scientist at a finance/IT conglomerate in Tokyo, and as an teacher in Moscow. A long time ago, I grew up in NYC.
+Before my graduate studies, I worked as a Data Scientist at a finance/IT conglomerate in Tokyo, and as an teacher in Moscow. A long time ago, I grew up in NYC.
 
 - [CV](/static/docs/mharukawa_cv.pdf)
 - [teaching website](https://muhark.github.io/dpir-intro-python)
