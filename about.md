@@ -15,7 +15,7 @@ Before my graduate studies, I worked as a Data Scientist at a finance/IT conglom
 
 - [CV](/static/docs/mharukawa_cv.pdf)
 - [teaching website](https://muhark.github.io/dpir-intro-python)
-- email: `musashi[period]harukawa[at]politics[dot]ox[fullstop]ac[.]uk`
+- email: `mjacobsharukawa[at]princeton[fullstop]edu`
 
 ## This Blog
 
