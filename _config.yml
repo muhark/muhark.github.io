@@ -1,8 +1,8 @@
-title: Full Stack Political Science
+DDCle: Full Stack Political Science
 description: A blog about becoming your own IT division as a social science researcher
-author: Musashi (Jacobs-) Harukawa
+author: Musashi Hinck (né Jacobs-Harukawa)
 github: https://github.com/muhark
-about: Coding, Debugging, Designing and Optimizing for Political Science Research
+about: Coding, Debugging, Designing and Optimizing for Social Science Research
 
 enableTags: true
 tagarray: []
@@ -13,8 +13,6 @@ collections:
     permalink: /project/:path/
 
 social:
-    - icon: fa-twitter
-      link: "https://twitter.com/MJacobsHarukawa"
     - icon: fa-linkedin
       link: "https://www.linkedin.com/in/musashijacobsharukawa"
     - icon: fa-github
