@@ -6,8 +6,20 @@ permalink: /about/
 
 ## Me
 
-Hi! My name is Musashi (sometimes Jacobs-) Harukawa.
-I'm a postdoctoral researcher at the [Data-Driven Social Science Initiative](https://ddss.princeton.edu) at Princeton University. I research computational/quantitative methods, especially those concerning unstructured data. Recently I am interested in the applications of deep learning tools in computational social science, and have done work on [multimodal classifiers for political advertisements](https://muhark.github.io/project/multimodal-ad-transformers/) and [using model interpretability methods to characterize campaign style](https://muhark.github.io/project/attribution-rationales-annotation/).
+Hi! My name is Musashi Hinck (né Jacobs-Harukawa).
+I am a postdoctoral researcher at the [Data-Driven Social Science Initiative](https://ddss.princeton.edu) at Princeton University working with [Professor Brandon Stewart](https://bstewart.scholar.princeton.edu).
+
+My research covers natural language processing and social science research methods. Current research:
+
+- [Leveraging doubly robust correction for LLM annotation to ensure unbiased and asymptotically normal downstream estimates](https://muhark.github.io/project/dsl).
+- Using LLMs to improve survey research.
+- Controlled counterfactual text generation.
+
+Earlier research:
+
+- [multimodal classifiers for political advertisements](https://muhark.github.io/project/multimodal-ad-transformers/)
+- [using model interpretability methods to characterize campaign style](https://muhark.github.io/project/attribution-rationales-annotation/).
+- [experimental estimation of the effect of targeted allocations](https://muhark.github.io/project/does-microtargeting-work/)
 
 Previously, I was a pre-doctoral researcher at University College London working with [Lucy Barnes](https://www.ucl.ac.uk/political-science/people/dr-lucy-barnes) on the UKRI-funded [MENMOPE](https://www.ucl.ac.uk/political-science/mental-models-political-economy-menmope) project, and did my DPhil in Politics at the University of Oxford supervised by [Andy Eggers](http://andy.egge.rs) and [Ray Duch](https://www.raymondduch.com/).
 
@@ -15,9 +27,11 @@ Before my graduate studies, I worked as a Data Scientist at a finance/IT conglom
 
 - [CV](/static/docs/mharukawa_cv.pdf)
 - [teaching website](https://muhark.github.io/dpir-intro-python)
-- email: `mjacobsharukawa[at]princeton[fullstop]edu`
+- email: `mj2976[at]princeton[fullstop]edu`
 
 ## This Blog
+
+_I haven't updated the blog in a while, but I hope to spend some time on it soon!_
 
 While computational methods have become essential for political (and other social) science research, our research environment and support infrastructure have not caught up. Tasks that are usually handled by different teams in an IT company are all down to the researcher; you have to become your own sys admin, front end developer, back end developer, database administrator, and data analyst.
 

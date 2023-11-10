@@ -1,5 +1,12 @@
 [
 	{
+		"slug": "dsl",
+		"name": "Design-based Seupervised Learning",
+		"image": "",
+		"date": "May 2023",
+		"tags": ["NLP", "LLMs", "Causal Inference"]
+	},
+	{
 		"slug": "does-microtargeting-work",
 		"name": "Estimating the Effect of Micro-Targeting",
 		"image": "effect_of_targeting_final.png",
