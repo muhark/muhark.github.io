@@ -1,10 +1,8 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
-
-## Me
 
 Hi! My name is Musashi Hinck (né Jacobs-Harukawa).
 I am a postdoctoral researcher at the [Data-Driven Social Science Initiative](https://ddss.princeton.edu) at Princeton University working with [Professor Brandon Stewart](https://bstewart.scholar.princeton.edu).
