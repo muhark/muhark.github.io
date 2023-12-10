@@ -34,4 +34,4 @@ Proofs and experiments are shown in the paper, and software and short video expl
 
 - [Link to Preprint](https://doi.org/10.48550/arXiv.2306.04746)
 - [Link to Supplement](https://naokiegami.com/paper/dsl_supplement.pdf)
-
+- [Link to 5min Video Explainer](https://recorder-v3.slideslive.com/?share=88028&s=fdfbd1be-a7fd-40b3-9cfe-2636d0ffe0e5)

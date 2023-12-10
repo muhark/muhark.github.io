@@ -2,7 +2,7 @@
 	{
 		"slug": "dsl",
 		"name": "Design-based Seupervised Learning",
-		"image": "",
+		"image": "dsl.png",
 		"date": "May 2023",
 		"tags": ["NLP", "LLMs", "Causal Inference"]
 	},
