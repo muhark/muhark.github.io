@@ -1,3 +1,6 @@
+**Archived version of previous blog**
+
+
 ## Full Stack Social Science
 
 Blog has not been updated in a while, but still keeping it up.
