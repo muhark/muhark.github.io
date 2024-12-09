@@ -162,6 +162,11 @@ hr {
 
 /* lists */
 
+ul, ol {
+  // Reduce space between items
+  line-height: 1.0;
+}
+
 ul li,
 ol li {
   margin-bottom: 0.5em;
