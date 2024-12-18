@@ -18,6 +18,7 @@ Prior to Intel, I was postdoc at Princeton University working with [Professor Br
 
 ## News
 
+- **Dec 2024**: Scholar Award for top Intel Labs Academic Author
 - **Dec 2024**: Spotlight Paper at the Creativity and AI Workshop at NeurIPS 2024
 - **Oct 2024**: 3 papers accepted to NeurIPS 2024 Workshops
 - **Sep 2024**: 2 papers accepted to EMNLP 2024
