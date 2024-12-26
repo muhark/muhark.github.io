@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am an Research Scientist in the Emergent Artificial Intelligence Lab at Intel Labs.
+I am a Research Scientist in the Emergent Artificial Intelligence Lab at Intel Labs.
 My research focuses on three main areas:
 
 - Characterizing latent social biases in large generative models
