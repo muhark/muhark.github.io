@@ -77,20 +77,20 @@ Data scientist/analyst at SBI Japannext, Japan's foremost PTS.
 
 Experienced with following:
 
-- Languages: `Python`, `R`, `bash`, `SQL`
+- Languages: `Python`, `R`, `bash`
 - Model development with `pytorch`, `transformers`
 - Distributed training with `torch.distributed`, `deepspeed`, `FSDP`
-- Experienced with `docker`, `kubernetes` and `SLURM`
+- Experienced with `Linux`, `docker`, `kubernetes` and `SLURM`
 
 
 
-# Publications
+<!-- # Publications
 
 <ul>
 {% for post in site.publications reversed %}
     {% include archive-single.html %}
 {% endfor %}
-</ul>
+</ul> -->
   
 <!-- Talks
 ======
