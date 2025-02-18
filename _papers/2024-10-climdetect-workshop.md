@@ -2,8 +2,8 @@
 title: "Exploring Vision Transformers for Early Detection of Climate Change Signals"
 authors: "Sungduk Yu, Anahita Bhiwandiwalla, Yaniv Gurwicz, Musashi Hinck, Matthew Olson, Raanan Rohekar, Vasudev Lal"
 collection: publications
-category: conferences
-permalink: /publication/climdetect-workshop-neurips-2024
+category: workshops
+permalink: /papers/climdetect-workshop-neurips-2024
 excerpt: ''
 date: 2024-10-01
 venue: 'NeurIPS 2024 Tackling Climate Change with Machine Learning'

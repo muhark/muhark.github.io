@@ -3,7 +3,7 @@ title: "Political Compass or Spinning Arrow? Towards More Meaningful Evaluations
 authors: 'Paul Röttger, Valentin Hofmann, Valentina Pyatkin, Musashi Hinck, Hannah Rose Kirk, Hinrich Schütze, Dirk Hovy'
 collection: publications
 category: conferences
-permalink: /publication/pct-acl-2024
+permalink: /papers/pct-acl-2024
 excerpt: 'We evaluate the latent political biases of LLMs, and show that models give substantively different answers when not forced; that answers change depending on how models are forced; and that answers lack paraphrase robustness.'
 date: 2024-02-26
 venue: 'ACL 2024 (Main)'

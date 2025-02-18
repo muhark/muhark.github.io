@@ -2,8 +2,8 @@
 title: "Debiasing Large Vision-Language Models by Ablating Protected Attribute Representations"
 authors: "Neale Ratzlaff, Matthew Lyle Olson, Musashi Hinck, Shao-Yen Tseng, Vasudev Lal, and Phillip Howard"
 collection: publications
-category: conferences
-permalink: /publication/mechinterp-workshop-neurips-2024
+category: workshops
+permalink: /papers/mechinterp-workshop-neurips-2024
 excerpt: ''
 date: 2024-10-17
 venue: 'NeurIPS 2024 SafeGenAI Workshop'

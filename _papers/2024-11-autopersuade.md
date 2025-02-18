@@ -3,7 +3,7 @@ title: "AutoPersuade: A Framework for Evaluating and Explaining Persuasive Argum
 authors: "Till Raphael Saenger, Musashi Hinck, Justin Grimmer, and Brandon M Stewart"
 collection: publications
 category: conferences
-permalink: /publication/autopersuade-emnlp-2024
+permalink: /papers/autopersuade-emnlp-2024
 excerpt: 'We introduce a three-part framework for constructing persuasive messages.'
 date: 2024-07-02
 venue: 'EMNLP 2024 (Main)'

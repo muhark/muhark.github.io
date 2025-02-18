@@ -3,7 +3,7 @@ title: "Why do LLaVA Vision-Language Models Reply to Images in English?"
 authors: "Musashi Hinck*, Carolin Holtermann, Matthew Lyle Olson, Florian Schneider, Sungduk Yu, Anahita Bhiwandiwalla, Anne Lauscher, Shaoyen Tseng, Vasudev Lal"
 collection: publications
 category: conferences
-permalink: /publication/llava-fidelity-emnlp-2024
+permalink: /papers/llava-fidelity-emnlp-2024
 excerpt: 'Including an image in the query to a LLaVA-style VLM significantly increases the likelihood of the model returning an English response, regardless of the language of the query.'
 date: 2024-07-02
 venue: 'EMNLP 2024 (Findings)'

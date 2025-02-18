@@ -2,7 +2,7 @@
 title: "Steering Large Language Models to Evaluate and Amplify Creativity"
 authors: "Matthew Lyle Olson, Neale Ratzlaff, Musashi Hinck, Shao-Yen Tseng, Vasudev Lal"
 collection: publications
-category: conferences
+category: workshops
 permalink: /publication/mechinterp-creative-neurips-2024
 excerpt: 'We use model steering to measure and enhance creative properties of LLMs.'
 date: 2024-10-17

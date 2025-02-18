@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Musashi Hinck's Website"
+title                    : "muhark.github.io"
 title_separator          : "-"
 name                     : &name "Musashi Hinck"
 description              : &description "AI Research Scientist, Intel Labs"
@@ -76,14 +76,14 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  # books:
-  #   title: 'Books'
+  preprints:
+    title: 'Preprints'
   manuscripts:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
-  preprints:
-    title: 'Preprints'
+  workshops:
+    title: 'Workshop Papers'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -217,7 +217,7 @@ collections:
   teaching:
     output: false
     permalink: /:collection/:path/
-  publications:
+  papers:
     output: true
     permalink: /:collection/:path/
   portfolio:
@@ -226,9 +226,12 @@ collections:
   talks:
     output: false
     permalink: /:collection/:path/
-  preprints:
-    output: true
-    permalink: /:collection/:path/
+  # publications:
+  #   output: true
+  #   permalink: /:collection/:path/
+  # preprints:
+  #   output: true
+  #   permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -260,10 +263,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _publications
+  # _papers
   - scope:
       path: ""
-      type: publications
+      type: papers
     values:
       layout: single
       author_profile: true

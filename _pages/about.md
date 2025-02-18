@@ -18,6 +18,7 @@ Prior to Intel, I was postdoc at Princeton University working with [Professor Br
 
 ## News
 
+- **Feb 2025**: New dataset on HuggingFace: [paul/issuebench](https://huggingface.co/datasets/Paul/IssueBench)
 - **Dec 2024**: Scholar Award for top Intel Labs Academic Author
 - **Dec 2024**: Spotlight Paper at the Creativity and AI Workshop at NeurIPS 2024
 - **Oct 2024**: 3 papers accepted to NeurIPS 2024 Workshops
@@ -27,13 +28,22 @@ Prior to Intel, I was postdoc at Princeton University working with [Professor Br
 - **Feb 2024**: Started at Intel Labs as AI Research Scientist
 
 ## Publications
+_For a full list of papers, see [here](/papers)_.
 
-<ul>{% for post in site.publications reversed %}
-  {% include archive-single-publication.html %}
+### Highlights
+
+<ul>{% for post in site.papers reversed %}
+  {% if post.category == "conferences" %}
+    {% include archive-single-publication.html %}
+  {% endif %}
 {% endfor %}</ul>
 
-## Preprints
+### Preprints
 
-<ul>{% for post in site.preprints reversed %}
-  {% include archive-single-publication.html %}
+<ul>{% for post in site.papers reversed %}
+  {% if post.category == "preprints" %}
+    {% include archive-single-publication.html %}
+  {% endif %}
 {% endfor %}</ul>
+
+

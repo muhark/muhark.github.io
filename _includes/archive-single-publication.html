@@ -17,20 +17,21 @@
     <li>
     <h3 class="archive__item-title" itemprop="headline">
       {% if post.link %}
-        <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+        <a href="{{ post.paperurl }}">{{ title }}</a>
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink">
+          <i class="fa fa-link" aria-hidden="true" title="permalink">
+          </i><span class="sr-only">Permalink</span>
+        </a>
       {% else %}
-        <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+        <a href="{{ post.paperurl }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h3>
-    <!-- {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.brief }}</p> {% endif %} -->
-    <!-- {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">
-      {{ post.authors }}. <em>{{ post.venue }}</em>. {% if post.awards %} ⭐<b>{{ post.awards }}</b>⭐{% endif %}
-    </p>
-    {% endif %} -->
-    <p class="archive__item-excerpt" itemprop="description">
+    <p class="archive__item-excerpt" itemprop="venue">
       {{ post.authors | replace: "Musashi Hinck", "<b>Musashi Hinck</b>" }}. 
-      {% if post.venue %}<em>{{ post.venue }}</em>.{% endif %}
-      {% if post.awards %} ⭐<b>{{ post.awards }}</b>⭐{% endif %}
+    </p>
+    <p class="archive__subtitle" itemprop="description" style="margin-top: -15px;">
+      {% if post.venue %}<em>{{ post.venue }}</em>{% endif %}
+      {% if post.awards %} ⭐<b style="color: #000">{{ post.awards }}</b>⭐{% endif %}
     </p>
     </li>
  </article>

@@ -5,8 +5,14 @@
 # prevent it from being included in the site.
 
 main:
-  - title: "Publications"
-    url: /publications/
+  - title: "Home"
+    url: /
+
+  - title: "Papers"
+    url: /papers/
+
+  # - title: "Publications"
+  #   url: /publications/
 
   - title: "CV"
     url: /cv/

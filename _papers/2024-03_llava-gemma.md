@@ -2,8 +2,8 @@
 title: 'LLaVA-Gemma: Accelerating Multimodal Foundation Models with a Compact Language Model'
 authors: 'Musashi Hinck*, Matthew L Olson*, David Cobbley, Shao-Yen Tseng, Vasudev Lal'
 collection: publications
-category: conferences
-permalink: /publication/cvpr-mmfm-2024-llavagemma
+category: workshops
+permalink: /papers/cvpr-mmfm-2024-llavagemma
 excerpt: 'We train a suite of multimodal foundation models (MMFM) using the popular LLaVA framework with the recently released Gemma family of large language models (LLMs).'
 date: 2024-02-26
 venue: 'CVPR 2024 Multimodal Foundation Models Workshop'
