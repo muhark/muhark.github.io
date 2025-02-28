@@ -6,6 +6,8 @@ category: preprints
 permalink: /preprints/climdetect
 excerpt: ''
 paperurl: 'https://arxiv.org/abs/2408.15993'
+highlight: "false"
+order: 99
 ---
 
 

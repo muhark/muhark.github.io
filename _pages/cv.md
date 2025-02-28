@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+[pdf version](/files/Musashi_Hinck_CV.pdf)
+
 
 ## Employment
 

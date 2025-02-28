@@ -8,6 +8,8 @@ excerpt: 'Including an image in the query to a LLaVA-style VLM significantly inc
 date: 2024-07-02
 venue: 'EMNLP 2024 (Findings)'
 paperurl: 'https://aclanthology.org/2024.findings-emnlp.783/'
+highlight: "true"
+order: 3
 ---
 
 

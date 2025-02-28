@@ -32,18 +32,20 @@ _For a full list of papers, see [here](/papers)_.
 
 ### Highlights
 
-<ul>{% for post in site.papers reversed %}
-  {% if post.category == "conferences" %}
-    {% include archive-single-publication.html %}
-  {% endif %}
-{% endfor %}</ul>
+<ol>{% assign sorted_papers = site.papers | sort: 'order' %}
+  {% for post in sorted_papers %}
+    {% if post.highlight == "true" %}
+      {% include archive-single-publication.html %}
+    {% endif %}
+  {% endfor %}</ol>
 
-### Preprints
+### Preprints 
 
-<ul>{% for post in site.papers reversed %}
-  {% if post.category == "preprints" %}
-    {% include archive-single-publication.html %}
-  {% endif %}
-{% endfor %}</ul>
+<ul>{% assign sorted_papers = site.papers | sort: 'order' %}
+  {% for post in sorted_papers %}
+    {% if post.category == "preprints" %}
+      {% include archive-single-publication.html %}
+    {% endif %}
+  {% endfor %}</ul>
 
 

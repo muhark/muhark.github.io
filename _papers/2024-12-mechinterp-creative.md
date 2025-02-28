@@ -9,6 +9,8 @@ date: 2024-10-17
 venue: 'NeurIPS 2024 Creativity and Generative AI'
 paperurl: 'https://arxiv.org/abs/2412.06060'
 awards: 'Spotlight'
+highlight: "false"
+order: 99
 ---
 
 

@@ -9,6 +9,8 @@ date: 2024-02-26
 venue: 'CVPR 2024 Multimodal Foundation Models Workshop'
 # slidesurl: ''
 paperurl: 'https://arxiv.org/abs/2404.01331'
+highlight: "false"
+order: 99
 ---
 
 - Featured on HuggingFace Daily Papers! [Tweet](https://x.com/_akhaliq/status/1775348024278962373)

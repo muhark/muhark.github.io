@@ -6,6 +6,8 @@ category: preprints
 permalink: /preprints/semanticmoe
 excerpt: ''
 paperurl: 'https://arxiv.org/abs/2502.10928'
+highlight: "false"
+order: 99
 ---
 
 ## Abstract

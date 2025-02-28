@@ -7,7 +7,9 @@ permalink: /papers/autopersuade-emnlp-2024
 excerpt: 'We introduce a three-part framework for constructing persuasive messages.'
 date: 2024-07-02
 venue: 'EMNLP 2024 (Main)'
-paperurl: 'https://aclanthology.org/2024.findings-emnlp.783/'
+paperurl: 'https://aclanthology.org/2024.emnlp-main.913/'
+highlight: "true"
+order: 4
 ---
 
 

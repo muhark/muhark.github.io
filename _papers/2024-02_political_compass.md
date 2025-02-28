@@ -10,6 +10,8 @@ venue: 'ACL 2024 (Main)'
 # slidesurl: ''
 paperurl: 'https://arxiv.org/abs/2402.16786'
 awards: 'Outstanding Paper Award'
+highlight: "true"
+order: 2
 ---
 
 

@@ -32,6 +32,7 @@
     <p class="archive__subtitle" itemprop="description" style="margin-top: -15px;">
       {% if post.venue %}<em>{{ post.venue }}</em>{% endif %}
       {% if post.awards %} ⭐<b style="color: #000">{{ post.awards }}</b>⭐{% endif %}
+      {% if post.paperurl %} 📄 <a href=" {{ post.paperurl }} ">Paper</a>{% endif %}
     </p>
     </li>
  </article>
