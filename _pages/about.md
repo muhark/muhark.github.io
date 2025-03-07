@@ -8,17 +8,19 @@ redirect_from:
 ---
 
 I am a Research Scientist in the Emergent Artificial Intelligence Lab at Intel Labs.
-My research focuses on three main areas:
 
-- Characterizing latent social biases in large generative models
-- Techniques for correcting these unwanted/unexpected biases
-- Conducting large-scale multimodal model training and inference (on Intel accelerators)
+The substantive focus of my research looks at characterizing latent social biases in large generative models and techniques for correcting/steering these biases.
+
+In practice, my work is up and down the AI Research/Engineering stack, from optimizing training for large multimodal models on hundreds of accelerators, to developing custom pytorch modules, to designing experiments and evaluation metrics.
 
 Prior to Intel, I was postdoc at Princeton University working with [Professor Brandon Stewart](https://bstewart.scholar.princeton.edu), and did my PhD at the University of Oxford with Professors [Andy Eggers](https://andy.egge.rs) and [Raymond Duch](https://www.raymondduch.com).
 
+A great thing about my work at Intel is that I am able to collaborate with external researchers! Please reach out if you are interested.
+
+
 ## News
 
-- **Feb 2025**: New dataset on HuggingFace: [paul/issuebench](https://huggingface.co/datasets/Paul/IssueBench)
+- **Feb 2025**: New dataset on HuggingFace: [IssueBench](https://huggingface.co/datasets/Paul/IssueBench)
 - **Dec 2024**: Scholar Award for top Intel Labs Academic Author
 - **Dec 2024**: Spotlight Paper at the Creativity and AI Workshop at NeurIPS 2024
 - **Oct 2024**: 3 papers accepted to NeurIPS 2024 Workshops
