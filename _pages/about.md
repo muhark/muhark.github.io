@@ -9,13 +9,11 @@ redirect_from:
 
 I am a Research Scientist in the Emergent Artificial Intelligence Lab at Intel Labs.
 
-The substantive focus of my research looks at characterizing latent social biases in large generative models and techniques for correcting/steering these biases.
+The substantive focus of my research is characterizing latent social biases in large generative models and techniques for correcting/steering these biases.
 
-In practice, my work is up and down the AI Research/Engineering stack, from optimizing training for large multimodal models on hundreds of accelerators, to developing custom pytorch modules, to designing experiments and evaluation metrics.
+In practice, my work is up and down the AI Research/Engineering stack, from optimizing training for large multimodal models on hundreds of accelerators, to writing custom models and pipelines, to designing experiments and evaluation metrics.
 
 Prior to Intel, I was postdoc at Princeton University working with [Professor Brandon Stewart](https://bstewart.scholar.princeton.edu), and did my PhD at the University of Oxford with Professors [Andy Eggers](https://andy.egge.rs) and [Raymond Duch](https://www.raymondduch.com).
-
-A great thing about my work at Intel is that I am able to collaborate with external researchers! Please reach out if you are interested.
 
 
 ## News
